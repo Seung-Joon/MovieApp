@@ -1,0 +1,54 @@
+.container{
+    width: 400px;
+
+    display: grid;
+
+    grid-template-columns: 50px auto;
+    grid-template-rows: 14px 26px 14px;
+
+    grid-template-areas:
+		"logo title"
+		"logo content"  /* authority, expirationDate */
+        "logo certificationId";
+
+        grid-gap: 1px;
+        padding: 1px;
+        
+        align-items: center;
+      }
+
+p {
+    margin: 0px;
+}
+      
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1px 0;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logoImage{
+    width: 50px;
+    
+
+}
+
+.title{
+    grid-area: title;
+
+    font-size: 5px;
+}
+
+.content{
+    grid-area: content;
+}
+
+.certificationId{
+    grid-area: certificationId;
+    font-size: 5px;
+}
+
